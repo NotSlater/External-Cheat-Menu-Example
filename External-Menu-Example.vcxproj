@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{c9516ca0-d9ec-4678-9a55-e1b0b23f4b1a}</ProjectGuid>
-    <RootNamespace>RustScript</RootNamespace>
+    <RootNamespace>ExternalMenu</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>External-Cheat-Menu</ProjectName>
   </PropertyGroup>
