@@ -1,5 +1,24 @@
 # External-Cheat-Menu-Example
-**How To Use**  
+
+## Features
+(These are just features without functions)
+*   **Aimbot**
+*   **Smoothing**
+*   **Fov Circle** (Partially added, Not Working)
+*   **Visible Check**
+*   **Team Check**  
+*   **Visuals**
+*   **Full Box**
+*   **Corner Box**
+*   **Skeletonx**
+*   **Name**
+*   **Health**
+*   **Weapon**
+*   **Extras**
+*   **No Recoil**
+*   **No Spread**
+
+## **How To Use**  
 Requirements: Visual Studio
 ```
 Step 1: Download all files and extract to a folder
