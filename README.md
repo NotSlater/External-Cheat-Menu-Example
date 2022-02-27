@@ -7,7 +7,7 @@
 > This is a ready-to-use external cheat menu and it does not have any game hook functions. 
 
 ## Disclaimer
-[This programm](https://github.com/TosoxDev/Destiny.ut) is for educational purposes only!
+[This program](https://github.com/NotSlater/External-Cheat-Menu-Example) is for educational purposes only!
 
 Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research.
 
