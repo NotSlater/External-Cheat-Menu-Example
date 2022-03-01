@@ -290,6 +290,12 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                         ImGui::Checkbox("No Recoil", &BasePlayer::NoRecoil);
                         ImGui::Checkbox("No Spread", &BasePlayer::NoSpread);
                         ImGui::Text("        ...Coming soon...");
+                        ImGui::Text("");
+                        ImGui::Text("");
+                        ImGui::Text("");
+                        ImGui::Text("             -=Credits=-");
+                        ImGui::Text("       Discord - NotSlater#0999");
+                        ImGui::Text("         Github.com/NotSlater");
                     }
                 }
             }
