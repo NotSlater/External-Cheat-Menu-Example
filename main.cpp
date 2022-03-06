@@ -291,12 +291,12 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                         ImGui::Checkbox("No Recoil", &BasePlayer::NoRecoil);
                         if (BasePlayer::NoRecoil)
                         {
-                            ImGui::SliderFloat("   ", &BasePlayer::NoRecoilValue, 0, 100, "% .2f");
+                            ImGui::SliderFloat("  ", &BasePlayer::NoRecoilValue, 0, 100, "% .2f");
                         }
                         ImGui::Checkbox("NoNoSpreadSpread", &BasePlayer::NoSpread);
                         if (BasePlayer::NoRecoil)
                         {
-                            ImGui::SliderFloat("    ", &BasePlayer::NoSpreadValue, 0, 100, "% .2f");
+                            ImGui::SliderFloat("   ", &BasePlayer::NoSpreadValue, 0, 100, "% .2f");
                         }
                         ImGui::Text("        ...Coming soon...");
                         ImGui::Text("");
