@@ -39,7 +39,8 @@ namespace BasePlayer {
         //Weapon
         bool NoSpread = false;
         bool NoRecoil = false;
-        int RecoilValue = 100;
+        int RecoilValue = 0;
+        int SpreadValue = 0;
 
 
         //Aimbot
@@ -288,7 +289,15 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                     {
                         ImGui::Text("             -=Extras=-");
                         ImGui::Checkbox("No Recoil", &BasePlayer::NoRecoil);
-                        ImGui::Checkbox("No Spread", &BasePlayer::NoSpread);
+                        if (BasePlayer::NoRecoil)
+                        {
+                            ImGui::SliderFloat("   ", &BasePlayer::NoRecoilValue, 0, 100, "% .2f");
+                        }
+                        ImGui::Checkbox("NoNoSpreadSpread", &BasePlayer::NoSpread);
+                        if (BasePlayer::NoRecoil)
+                        {
+                            ImGui::SliderFloat("    ", &BasePlayer::NoSpreadValue, 0, 100, "% .2f");
+                        }
                         ImGui::Text("        ...Coming soon...");
                         ImGui::Text("");
                         ImGui::Text("");
