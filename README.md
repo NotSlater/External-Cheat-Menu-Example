@@ -33,7 +33,10 @@ Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is m
 Requirements: Visual Studio
 ```
 Step 1: Download all files and extract to a folder
-Step 2: Run ExternalMenu.vcxproj and Enjoy
+Step 2: Run ExternalMenu.vcxproj
+Step 3: Set Solution Config to Release
+Step 4: Go to Project->Properties
+Step 5: Change C++ Lang Standard to C++17
 ```
 Preview of base menu  
 ![image](https://user-images.githubusercontent.com/59234115/155837314-3ffd5ffb-5f59-4a30-82da-fb0af1a64021.png)
