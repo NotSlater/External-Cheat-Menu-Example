@@ -39,8 +39,8 @@ namespace BasePlayer {
         //Weapon
         bool NoSpread = false;
         bool NoRecoil = false;
-        int RecoilValue = 0;
-        int SpreadValue = 0;
+        float NoRecoilValue = 0;
+        float NoSpreadValue = 0;
 
 
         //Aimbot
