@@ -194,8 +194,8 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
     RECT screen_rect;
     GetWindowRect(GetDesktopWindow(), &screen_rect);
-    auto x = float(screen_rect.right - WINDOW_WIDTH) / 2.f;
-    auto y = float(screen_rect.bottom - WINDOW_HEIGHT) / 2.f;
+    auto screenwidth = float(screen_rect.right - WINDOW_WIDTH) / 2.f;
+    auto screenheight = float(screen_rect.bottom - WINDOW_HEIGHT) / 2.f;
 
     MSG msg;
     ZeroMemory(&msg, sizeof(msg));
@@ -269,7 +269,7 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                         {
                             //Drawing Fov Circle
                             auto draw = ImGui::GetBackgroundDrawList();
-                            draw->AddCircle(ImVec2(1920 / 2, 1080 / 2), 6 , IM_COL32(255, 0, 0, 255), 100, 0.0f);
+                            draw->AddCircle(ImVec2(screenwidth / 2, screenheight / 2), 6 , IM_COL32(255, 0, 0, 255), 90, 0.0f);
                             ImGui::SliderFloat("", &BasePlayer::FOVSize, 0, 240, "% .2f");
                         }
                         ImGui::Checkbox("Visible Check", &BasePlayer::Visible);
