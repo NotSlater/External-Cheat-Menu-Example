@@ -267,7 +267,9 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                         ImGui::Checkbox("Enable FOV", &BasePlayer::FOVCircle);
                         if (BasePlayer::FOVCircle)
                         {
-                            FovCircle();
+                            //Drawing Fov Circle
+                            auto draw = ImGui::GetBackgroundDrawList();
+                            draw->AddCircle(ImVec2(1920 / 2, 1080 / 2), 6 , IM_COL32(255, 0, 0, 255), 100, 0.0f);
                             ImGui::SliderFloat("", &BasePlayer::FOVSize, 0, 240, "% .2f");
                         }
                         ImGui::Checkbox("Visible Check", &BasePlayer::Visible);
