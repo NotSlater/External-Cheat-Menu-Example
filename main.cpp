@@ -58,12 +58,20 @@ namespace Variables {
     int ActiveTab = 1;
 }
 
-void FovCircle()
+void Overlay()
 {
-    int screen_x = GetSystemMetrics(SM_CXSCREEN);
-    int screen_y = GetSystemMetrics(SM_CYSCREEN);
+    float ScreenX = GetSystemMetrics(SM_CXSCREEN);
+    float ScreenY = GetSystemMetrics(SM_CYSCREEN);
+    ImGui::SetNextWindowPos(ImVec2(0, 0), ImGuiCond_Once);
+    ImGui::SetNextWindowSize(ScreenX, ScreenY);
+    ImGui::Begin("#overlay", nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_Nobackground | ImGuiWindowFlags_NoCollapse | 
+    ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoMouseInputs);
     auto draw = ImGui::GetBackgroundDrawList();
-    draw->AddCircle(ImVec2(screen_x / 2, screen_y / 2), BasePlayer::FOVSize, IM_COL32(255, 0, 0, 255), 100, 1.0f);
+    if (BasePlayer::FOVCircle)
+    { 
+        draw->AddCircle(ImVec2(ScreenX / 2, ScreenY / 2), BasePlayer::FOVSize, IM_COL32(255, 0, 0, 255), 100, 1.0f);
+    }
+    ImGui::End();
 }
 
 static const char* Bones[]{"Head","Neck","Body","Legs"};
@@ -267,9 +275,7 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                         ImGui::Checkbox("Enable FOV", &BasePlayer::FOVCircle);
                         if (BasePlayer::FOVCircle)
                         {
-                            //Drawing Fov Circle
-                            auto draw = ImGui::GetBackgroundDrawList();
-                            draw->AddCircle(ImVec2(screenwidth / 2, screenheight / 2), 6 , IM_COL32(255, 0, 0, 255), 90, 0.0f);
+                            Overlay();
                             ImGui::SliderFloat("", &BasePlayer::FOVSize, 0, 240, "% .2f");
                         }
                         ImGui::Checkbox("Visible Check", &BasePlayer::Visible);
