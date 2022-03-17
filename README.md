@@ -15,7 +15,7 @@ Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is m
 (These are just features without functions)
 *   **Aimbot**
 *   **Smoothing**
-*   **Fov Circle** (Partially added, Not Working)
+*   **Fov Circle** (Working but Fix background and make it transparent)
 *   **Visible Check**
 *   **Team Check**  
 *   **Visuals**
