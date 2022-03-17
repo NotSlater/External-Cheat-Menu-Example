@@ -12,12 +12,13 @@
 Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research.
 
 ## Features
-(These are just features without functions)
+(These are just features without functions)  
 *   **Aimbot**
 *   **Smoothing**
 *   **Fov Circle** (Working but Fix background and make it transparent)
 *   **Visible Check**
 *   **Team Check**  
+*   **Custom Overlay (Coming Soon)**  
 *   **Visuals**
 *   **Full Box**
 *   **Corner Box**
