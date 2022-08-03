@@ -18,7 +18,7 @@ Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is m
 *   **Fov Circle** (Working but Fix background and make it transparent)
 *   **Visible Check**
 *   **Team Check**  
-*   **Custom Overlay (Coming Soon)**  
+*   **Custom Overlay (Semi-Working, Need Make Background Transparent)**  
 *   **Visuals**
 *   **Full Box**
 *   **Corner Box**
