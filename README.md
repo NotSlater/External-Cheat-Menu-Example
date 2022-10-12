@@ -32,6 +32,7 @@ Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is m
 
 ## **How To Use**  
 Requirements: Visual Studio
+(You can add a font to make it look better)
 ```
 Step 1: Download all files and extract to a folder
 Step 2: Run ExternalMenu.vcxproj
